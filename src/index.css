@@ -1,0 +1,13 @@
+@import "./styles/tokens.css";
+@import "./styles/base.css";
+@import "./styles/navbar.css";
+@import "./styles/hero.css";
+@import "./styles/sections-1.css";
+@import "./styles/experience.css";
+@import "./styles/projects.css";
+@import "./styles/sections-2.css";
+
+#root {
+  position: relative;
+  z-index: 1;
+}

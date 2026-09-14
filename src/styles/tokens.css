@@ -1,0 +1,115 @@
+/* ─────────────────────────────────────────────────────────
+   DESIGN TOKENS — light (white + purple text/accents) and
+   dark (deep purple, aurora background) themes via
+   [data-theme="dark"] on <html>. Typeface: Inter throughout.
+   ───────────────────────────────────────────────────────── */
+
+:root,
+[data-theme="light"] {
+  --bg-void: #ffffff;
+  --bg-base: #ffffff;
+  --bg-raised: #f6f3ff;
+  --bg-card: rgba(255, 255, 255, 0.8);
+  --bg-card-solid: #ffffff;
+  --bg-inverse: #170a2e;
+  --border-hairline: rgba(109, 40, 217, 0.16);
+  --border-hairline-strong: rgba(109, 40, 217, 0.36);
+
+  --accent-purple: #6d28d9;
+  --accent-violet: #4c1d95;
+  --accent-lavender: #4c1d95;
+  --accent-purple-dim: rgba(109, 40, 217, 0.08);
+  --accent-cyan: #0891b2;
+  --accent-purple-bright: #7c3aed;
+
+  --text-primary: #1c1130;
+  --text-secondary: #4b2d80;
+  --text-muted: #7a63a8;
+  --text-on-accent: #ffffff;
+
+  --gradient-signature: linear-gradient(160deg, #ffffff 0%, #f4eeff 45%, #e9dcff 100%);
+  --gradient-text: linear-gradient(120deg, #3b0f7a 5%, #6d28d9 55%, #4c1d95 100%);
+  --gradient-border: linear-gradient(135deg, rgba(109, 40, 217, 0.5), rgba(139, 92, 246, 0.2));
+
+  --stack-card-bg: #170a2e;
+  --stack-card-border: rgba(167, 139, 250, 0.2);
+  --stack-card-text: #e8e3f7;
+  --stack-glow: rgba(139, 92, 246, 0.4);
+
+  --nav-glass: rgba(255, 255, 255, 0.7);
+  --nav-glass-scrolled: rgba(255, 255, 255, 0.9);
+  --nav-glass-mobile: rgba(255, 255, 255, 0.97);
+
+  --aurora-bg: #ffffff;
+
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --bg-void: #050512;
+  --bg-base: #050512;
+  --bg-raised: #0d0b1a;
+  --bg-card: rgba(15, 12, 28, 0.6);
+  --bg-card-solid: #0d0b1a;
+  --bg-inverse: #ffffff;
+  --border-hairline: rgba(196, 181, 253, 0.14);
+  --border-hairline-strong: rgba(196, 181, 253, 0.34);
+
+  --accent-purple: #a78bfa;
+  --accent-violet: #c4b5fd;
+  --accent-lavender: #ddd6fe;
+  --accent-purple-dim: rgba(167, 139, 250, 0.12);
+  --accent-cyan: #22d3ee;
+  --accent-purple-bright: #8b5cf6;
+
+  --text-primary: #f3effc;
+  --text-secondary: #c6b9ea;
+  --text-muted: #8f7fbb;
+  --text-on-accent: #050512;
+
+  --gradient-signature: linear-gradient(160deg, #050512 0%, #0d0b1a 45%, #150f28 100%);
+  --gradient-text: linear-gradient(120deg, #ddd6fe 10%, #a78bfa 55%, #c4b5fd 100%);
+  --gradient-border: linear-gradient(135deg, rgba(196, 181, 253, 0.55), rgba(34, 211, 238, 0.2));
+
+  --stack-card-bg: #0d0b1a;
+  --stack-card-border: rgba(196, 181, 253, 0.22);
+  --stack-card-text: #ece6fb;
+  --stack-glow: rgba(167, 139, 250, 0.5);
+
+  --nav-glass: rgba(5, 5, 18, 0.7);
+  --nav-glass-scrolled: rgba(5, 5, 18, 0.9);
+  --nav-glass-mobile: rgba(5, 5, 18, 0.97);
+
+  --aurora-bg: #050512;
+
+  color-scheme: dark;
+}
+
+:root {
+  --font-display: "Geist", "Inter", "Segoe UI", sans-serif;
+  --font-body: "Geist", "Inter", "Segoe UI", sans-serif;
+  --font-mono: "Geist Mono", "JetBrains Mono", "SFMono-Regular", Menlo, monospace;
+
+  --section-pad: clamp(4.5rem, 9vw, 8rem);
+  --edge-pad: clamp(1.25rem, 5vw, 4rem);
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 180ms;
+  --dur-med: 420ms;
+}
+
+body {
+  transition: background var(--dur-med) var(--ease-out), color var(--dur-med) var(--ease-out);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

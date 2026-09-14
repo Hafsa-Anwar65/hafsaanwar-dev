@@ -1,0 +1,91 @@
+// ─────────────────────────────────────────────────────────
+// SKILLS — 4 categories, approved directly with the site owner.
+// Each item has a display name + an icon key (looked up by
+// BrandIcon; falls back to a styled monogram automatically
+// if there's no real brand mark for it).
+// ─────────────────────────────────────────────────────────
+
+export const skillGroups = [
+  {
+    category: "AI/ML & Data",
+    icon: "BrainCircuit",
+    accent: "#a78bfa",
+    items: [
+      { name: "Machine Learning", icon: "ml" },
+      { name: "Deep Learning", icon: "deeplearning" },
+      { name: "CNNs", icon: "cnn" },
+      { name: "Feature Engineering", icon: "featureengineering" },
+      { name: "Model Development", icon: "modeldev" },
+      { name: "Generative AI", icon: "genai" },
+      { name: "Prompt Engineering", icon: "promptengineering" },
+      { name: "RAG", icon: "rag" },
+      { name: "LLM Applications", icon: "llm" },
+      { name: "OpenCV", icon: "opencv" },
+      { name: "YOLO", icon: "yolo" },
+      { name: "MediaPipe", icon: "mediapipe" },
+      { name: "Object Detection", icon: "objectdetection" },
+      { name: "Object Tracking", icon: "objecttracking" },
+      { name: "Image Processing", icon: "imageprocessing" },
+      { name: "OCR", icon: "tesseract" },
+      { name: "Data Analysis", icon: "dataanalysis" },
+    ],
+  },
+  {
+    category: "Robotics",
+    icon: "Bot",
+    accent: "#8b5cf6",
+    items: [
+      { name: "ROS 2", icon: "ros" },
+      { name: "MoveIt", icon: "moveit" },
+      { name: "RViz", icon: "rviz" },
+      { name: "Gazebo", icon: "gazebo" },
+      { name: "Forward Kinematics", icon: "kinematics" },
+      { name: "Inverse Kinematics", icon: "kinematics" },
+      { name: "Trajectory Planning", icon: "trajectory" },
+      { name: "A* Path Planning", icon: "pathplanning" },
+      { name: "LiDAR Navigation", icon: "lidar" },
+      { name: "MATLAB", icon: "matlab" },
+      { name: "SolidWorks", icon: "solidworks" },
+      { name: "AutoCAD", icon: "autocad" },
+      { name: "Xilinx", icon: "xilinx" },
+      { name: "Circuit Lab", icon: "circuitlab" },
+      { name: "NI Multisim", icon: "nimultisim" },
+    ],
+  },
+  {
+    category: "Tools & Frameworks",
+    icon: "Code2",
+    accent: "#c4b5fd",
+    items: [
+      { name: "Python", icon: "python" },
+      { name: "C++", icon: "cplusplus" },
+      { name: "C", icon: "c" },
+      { name: "JavaScript", icon: "javascript" },
+      { name: "HTML", icon: "html5" },
+      { name: "CSS", icon: "css3" },
+      { name: "FastAPI", icon: "fastapi" },
+      { name: "Flask", icon: "flask" },
+      { name: "REST APIs", icon: "restapi" },
+      { name: "API / Swagger", icon: "swagger" },
+      { name: "MLflow", icon: "mlflow" },
+      { name: "Git", icon: "git" },
+      { name: "GitHub", icon: "github" },
+      { name: "VS Code", icon: "vscode" },
+      { name: "Linux", icon: "linux" },
+    ],
+  },
+  {
+    category: "Automation",
+    icon: "Workflow",
+    accent: "#7c3aed",
+    items: [
+      { name: "n8n", icon: "n8n" },
+      { name: "Make", icon: "make" },
+      { name: "Playwright", icon: "playwright" },
+      { name: "Automation Anywhere", icon: "automationanywhere" },
+      { name: "Workflow Automation", icon: "workflow" },
+      { name: "MongoDB Atlas Vector Search", icon: "mongodb" },
+      { name: "ChromaDB", icon: "chromadb" },
+    ],
+  },
+];
